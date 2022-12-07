@@ -1,0 +1,17 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: helm-hooks
+  namespace: argocd
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    namespace: env-dev
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    path: service-applications/helm-hooks
+    repoURL: https://github.com/thirtynine96/argo-app-of-apps
+    targetRevision: HEAD
+
