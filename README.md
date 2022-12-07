@@ -4,11 +4,11 @@ Argo 사이트에서 보이는 app 들은 kind: Application 이다. (CRD)
    * 설치
    ```
    cd argo-cd
-   helm install -n argocd ds-argocd . 
+   helm install -n argocd ds-argocd argo/argo-cd 
    ```
    * 업그레이드 (app of apps 적용)
    ```
-   helm upgrade -n argocd ds-argocd . -f ../argo-app-of-apps/values_root.yaml
+   helm upgrade -n argocd ds-argocd argo/argo-cd -f ../argo-app-of-apps/values_root.yaml
    ```
 2. ArgoCD Chart 를 바이너리형태로 다운로드 해서 설치한 경우
    * 설치
