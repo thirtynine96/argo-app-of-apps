@@ -20,7 +20,7 @@ Argo 사이트에서 보이는 app 들은 kind: Application 이다. (CRD)
    cd argo-app-of-apps
    helm upgrade -n argocd ds-argocd . -f values_root.yaml
    ```
-3. 
+3. argo-apps 디렉토리의 application crd 명세를 하나의 파일로 작성필요
 
 
 
