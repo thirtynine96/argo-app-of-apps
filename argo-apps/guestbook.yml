@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/thirtynine96/declarative-argocd.git
+    repoURL: https://github.com/thirtynine96/argo-app-of-apps.git
     targetRevision: HEAD
     path: service-applications/guestbook
   destination:
